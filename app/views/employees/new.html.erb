@@ -1,0 +1,27 @@
+<h2>Create Employees</h2>
+<hr>
+<%= form_for :employee, url: employees_path do |f| %>
+
+
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :age %>
+		<%= f.text_field :age %>
+	</p>
+	<p>
+		<%= f.label :designation %>
+		<%= f.text_field :designation %>
+	</p>
+	<p>
+		<%= radio_button_tag(:gender, "female")%>
+		<%= label_tag(:female, "Female") %>
+		<%= radio_button_tag(:gender, "male") %>
+		<%= label_tag(:male, "Male") %>
+	</p>
+	<p>
+	<%= f.submit%>
+	</p>
+<% end %>

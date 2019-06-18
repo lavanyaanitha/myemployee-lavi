@@ -1,0 +1,8 @@
+<h2>Name:<%= @employee.name %><br></h2>
+	<p>Age:<%= @employee.age %><br>
+	Gender:<%= @employee.gender %><br>
+	Designation:<%= @employee.designation %><br>
+	</p>
+	<hr>
+<%= link_to "Edit" ,edit_employee_path %>
+<%= link_to "Delete" ,@employee, method: :delete,data:{confirm: 'Are you sure?'}%>
