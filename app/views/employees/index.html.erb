@@ -1,4 +1,7 @@
+<%= link_to "Create employee", new_employee_path ,{:class => 'btn  btn-primary'} %>
+<hr/>
 <h2>Employee details</h2>
+<hr/>
 <% @employee.each do |e| %>
 	<h1><%= e.name %></h1>
 	<h6>Designation:<%= e.designation %></h6>
